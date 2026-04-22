@@ -145,11 +145,6 @@ def remove_fav_fruit(fruit_id):
     return jsonify({"msg": "Favorite fruit removed"}), 200
 
 
-
-
-
-@
-
 # this only runs if `$ python src/app.py` is executed
 if __name__ == '__main__':
     PORT = int(os.environ.get('PORT', 3000))

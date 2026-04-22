@@ -68,7 +68,7 @@ class Fruit(db.Model):
             "name": self.name,
             "type": self.type,
 
-            # "fav_fruit_list":[fav.serialize()for fav in self.fav_fruit_lists]
+            "fav_fruit_list":[fav.serialize()for fav in self.fav_fruit_lists]
         }
 
 
