@@ -31,9 +31,9 @@ class User(db.Model):
             "is_active": self.is_active,
 
             "total_fav_characters": len(self.fav_characters),
-            "total_fav_fruits": len(self.fav_fruits)
-            # "fav_characters": [character.serialize() for character in self.fav_characters],
-            # "fav_fruits": [fruit.serialize() for fruit in self.fav_fruits]
+            "total_fav_fruits": len(self.fav_fruits),
+            "fav_characters": [character.serialize() for character in self.fav_characters],
+            "fav_fruits": [fruit.serialize() for fruit in self.fav_fruits]
         }
 
 class Character(db.Model):
